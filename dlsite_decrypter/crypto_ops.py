@@ -1,7 +1,5 @@
 from Crypto.Cipher import AES
 from Crypto.Util import strxor
-from Crypto.Util.Padding import pad, unpad
-import struct
 
 
 def generate_ivs(key, initiv):

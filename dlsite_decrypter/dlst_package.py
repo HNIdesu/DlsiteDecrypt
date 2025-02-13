@@ -1,4 +1,4 @@
-from pkg_resources import parse_version
+from .pkg_resources import parse_version
 from kaitaistruct import __version__ as ks_version, KaitaiStruct, KaitaiStream, BytesIO
 
 if parse_version(ks_version) < parse_version("0.7"):
