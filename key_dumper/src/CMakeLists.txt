@@ -1,0 +1,5 @@
+add_library(key_dumper SHARED key_dumper.cpp)
+add_library(Message_ STATIC Message.cpp)
+add_library(TcpClient STATIC TcpClient.cpp)
+add_executable(DllInjector DllInjector.cpp)
+target_link_libraries(key_dumper PRIVATE minhook Message_ TcpClient ws2_32)
